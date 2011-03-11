@@ -1,13 +1,13 @@
 [user]
-	name = Francisco J.
-	email = nflamel@otrobloggeek.com
+	name = Pieter Eerlings
+	email = pieter.eerlings@gmail.com
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
-	editor = "/usr/local/bin/mvim -f"
+	editor = "mate -w"
 	autocrlf = input
 [apply]
 	whitespace = fix
@@ -17,5 +17,5 @@
 	co = checkout
 	s = status
 [github]
-	user = franciscoj
+	user = pietere
 	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>

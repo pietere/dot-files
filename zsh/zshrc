@@ -10,17 +10,14 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="~/bin:/usr/local/Cellar/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin::$PATH"
 
-# Load android-sdk installed from homebrew
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r6
 # Set macvim as the default editor
-export EDITOR='mvim -f'
+export EDITOR='mate -w'
 
 # Load RVM
 unsetopt auto_name_dirs
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 alias pautotest="autotest -p"
-alias vim="mvim"
 alias migrate="rake db:migrate db:test:clone"
 alias pmigrate="rake db:migrate parallel:prepare"
 alias rst="touch tmp/restart.txt"
